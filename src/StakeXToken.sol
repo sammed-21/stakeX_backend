@@ -6,6 +6,6 @@ pragma solidity ^0.8.27;
 
 contract StakeXToken is ERC20 {
      constructor(uint256 initialSupply) ERC20("StakeXToken", "STX") {
-        _mint(msg.sender, initialSupply);
+        _mint(msg.sender, initialSupply*10**18);
     }
 }
