@@ -7,7 +7,7 @@ import {RewardToken} from "../src/RewardToken.sol";
 import {Staking} from "../src/Staking.sol";
 
 contract DeployStaking is Script {
-    function run() external {
+    function run() external returns (Staking) {
         // Fetch the deployer's private key from environment variables
         // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
 
@@ -25,6 +25,7 @@ contract DeployStaking is Script {
 
         // Stop broadcasting (end the transaction)
         vm.stopBroadcast();
+        return staking;
  
     }
 }
