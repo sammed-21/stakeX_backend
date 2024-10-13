@@ -3,7 +3,8 @@
 pragma solidity ^0.8.27;
 
 import  "@openzeppelin/security/ReentrancyGuard.sol";
-import  "@openzeppelin/token/ERC20/IERC20.sol";
+import "@openzeppelin/token/ERC20/IERC20.sol";
+
 import "@openzeppelin/utils/math/SafeMath.sol";
 
 contract Staking is ReentrancyGuard {

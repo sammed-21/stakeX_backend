@@ -6,6 +6,6 @@ pragma solidity ^0.8.27;
 
 contract RewardToken is ERC20 {
     constructor(uint256 initialSupply) ERC20("RewardToken", "RWT") {
-        _mint(msg.sender, initialSupply);
+        _mint(msg.sender, initialSupply*10**18);
     }
 }
