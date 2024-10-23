@@ -8,9 +8,6 @@ import {Staking} from "../src/Staking.sol";
 
 contract DeployStaking is Script {
     function run() external returns (Staking) {
-        // Fetch the deployer's private key from environment variables
-        // uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-
         // Start broadcasting the transaction using the deployer's private key
         vm.startBroadcast();
 
